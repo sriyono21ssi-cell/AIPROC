@@ -1,0 +1,55 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AI Proc - AI Procurement Tools</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'primary': '#0D47A1',
+              'primary-focus': '#0B3A80',
+              'secondary': '#42A5F5',
+              'accent': '#FFC107',
+              'neutral': '#192231',
+              'base-100': '#F5F7FA',
+              'base-200': '#E3E8EE',
+              'base-300': '#CDD5DF',
+              'info': '#2196F3',
+              'success': '#4CAF50',
+              'warning': '#FF9800',
+              'error': '#F44336',
+            },
+          }
+        }
+      }
+    </script>
+    <style>
+      @media print {
+        /* Hide UI elements not relevant for the report */
+        aside, header, .no-print {
+          display: none !important;
+        }
+      }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "@google/genai": "https://aistudiocdn.com/@google/genai@^1.27.0",
+    "recharts": "https://aistudiocdn.com/recharts@^3.3.0"
+  }
+}
+</script>
+</head>
+  <body class="bg-base-100">
+    <div id="root"></div>
+  </body>
+</html>

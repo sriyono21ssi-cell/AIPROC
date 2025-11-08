@@ -1,0 +1,7 @@
+{
+  "name": "AI Procure v3.0",
+  "description": "An intelligent tool to help procurement teams manage vendors, evaluate performance, search for new vendors with AI & Google Maps support, get automated insights, and use a friendly AI Assistant for administrative tasks.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
