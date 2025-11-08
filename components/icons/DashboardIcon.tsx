@@ -1,6 +1,6 @@
 
 import React from 'react';
-import { Icon } from './Icon';
+import { Icon } from 'components/icons/Icon';
 
 export const DashboardIcon: React.FC<React.SVGProps<SVGSVGElement>> = (props) => (
   <Icon {...props}>

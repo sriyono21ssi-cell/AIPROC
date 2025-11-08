@@ -1,11 +1,11 @@
 import React from 'react';
-import type { View } from '../types';
-import { DashboardIcon } from './icons/DashboardIcon';
-import { UsersIcon } from './icons/UsersIcon';
-import { SearchIcon } from './icons/SearchIcon';
-import { MessageSquareIcon } from './icons/MessageSquareIcon';
-import { PriceTagIcon } from './icons/PriceTagIcon';
-import { ScaleIcon } from './icons/ScaleIcon';
+import type { View } from 'types';
+import { DashboardIcon } from 'components/icons/DashboardIcon';
+import { UsersIcon } from 'components/icons/UsersIcon';
+import { SearchIcon } from 'components/icons/SearchIcon';
+import { MessageSquareIcon } from 'components/icons/MessageSquareIcon';
+import { PriceTagIcon } from 'components/icons/PriceTagIcon';
+import { ScaleIcon } from 'components/icons/ScaleIcon';
 
 interface SidebarProps {
   activeView: View;

@@ -1,5 +1,5 @@
 import { useState } from 'react';
-import type { Tender, Bid, ScoringCriterion, BidScore } from '../types';
+import type { Tender, Bid, ScoringCriterion, BidScore } from 'types';
 
 const initialTenders: Tender[] = [
     {

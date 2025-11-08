@@ -1,5 +1,5 @@
 import React from 'react';
-import type { PricedItem, PriceHistory, Vendor } from '../types';
+import type { PricedItem, PriceHistory, Vendor } from 'types';
 
 interface PriceComparisonProps {
   item: PricedItem;

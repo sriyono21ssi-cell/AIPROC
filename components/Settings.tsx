@@ -1,6 +1,6 @@
 
 import React from 'react';
-import type { GoogleSheetSettings } from '../types';
+import type { GoogleSheetSettings } from 'types';
 
 interface SettingsProps {
     settings: GoogleSheetSettings;

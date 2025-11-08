@@ -1,7 +1,7 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
-import type { Tender, Vendor, Bid, ScoringCriterion, BidScore, BidDetail } from '../types';
-import { generateBidScores } from '../services/geminiService';
+import type { Tender, Vendor, Bid, ScoringCriterion, BidScore, BidDetail } from 'types';
+import { generateBidScores } from 'services/geminiService';
 
 interface TenderScoringProps {
     tenders: Tender[];

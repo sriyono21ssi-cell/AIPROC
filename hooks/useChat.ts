@@ -1,5 +1,5 @@
 import { useState, useCallback } from 'react';
-import type { Message } from '../types';
+import type { Message } from 'types';
 
 const initialMessages: Message[] = [
     { sender: 'ai', text: 'Hallo, apa nih yang bisa saya bantu hari ini? 👋' }

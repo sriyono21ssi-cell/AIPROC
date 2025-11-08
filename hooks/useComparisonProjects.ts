@@ -1,5 +1,5 @@
 import { useState, useEffect, useCallback, useMemo } from 'react';
-import type { ComparisonProject, ComparisonVendor, Weights } from '../types';
+import type { ComparisonProject, ComparisonVendor, Weights } from 'types';
 
 const LOCAL_STORAGE_KEY = 'ai-procure-comparison-projects';
 

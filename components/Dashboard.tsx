@@ -1,11 +1,11 @@
 
 import React, { useState, useMemo } from 'react';
-import type { Vendor, PricedItem } from '../types';
-import { analyzeDashboardData } from '../services/geminiService';
+import type { Vendor, PricedItem } from 'types';
+import { analyzeDashboardData } from 'services/geminiService';
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend, ResponsiveContainer } from 'recharts';
-import { TrendingUpIcon } from './icons/TrendingUpIcon';
-import { TrendingDownIcon } from './icons/TrendingDownIcon';
-import { MinusIcon } from './icons/MinusIcon';
+import { TrendingUpIcon } from 'components/icons/TrendingUpIcon';
+import { TrendingDownIcon } from 'components/icons/TrendingDownIcon';
+import { MinusIcon } from 'components/icons/MinusIcon';
 
 
 interface DashboardProps {

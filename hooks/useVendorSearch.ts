@@ -1,7 +1,7 @@
 
 import React, { useState, useMemo, useCallback } from 'react';
-import { searchVendors } from '../services/geminiService';
-import type { SearchResult } from '../types';
+import { searchVendors } from 'services/geminiService';
+import type { SearchResult } from 'types';
 
 const initialState = {
   query: '',

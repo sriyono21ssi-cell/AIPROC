@@ -1,9 +1,9 @@
 
 import React from 'react';
-import type { Vendor } from '../types';
-import { TrendingUpIcon } from './icons/TrendingUpIcon';
-import { TrendingDownIcon } from './icons/TrendingDownIcon';
-import { MinusIcon } from './icons/MinusIcon';
+import type { Vendor } from 'types';
+import { TrendingUpIcon } from 'components/icons/TrendingUpIcon';
+import { TrendingDownIcon } from 'components/icons/TrendingDownIcon';
+import { MinusIcon } from 'components/icons/MinusIcon';
 
 interface VendorComparisonProps {
   vendors: Vendor[];

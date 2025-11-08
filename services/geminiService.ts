@@ -1,4 +1,4 @@
-import type { Vendor, SearchResult, PricedItem, Tender, Bid, BidDetail, BidScore, Message, ComparisonProject } from '../types';
+import type { Vendor, SearchResult, PricedItem, Tender, Bid, BidDetail, BidScore, Message, ComparisonProject } from 'types';
 
 // This service is now a client-side wrapper for our secure backend APIs.
 

@@ -1,11 +1,11 @@
 
 import React from 'react';
-import type { SearchResult, NewVendor } from '../types';
-import { WhatsappIcon } from './icons/WhatsappIcon';
-import { MapPinIcon } from './icons/MapPinIcon';
-import { PriceTagIcon } from './icons/PriceTagIcon';
-import { SearchIcon } from './icons/SearchIcon';
-import { RefreshIcon } from './icons/RefreshIcon';
+import type { SearchResult, NewVendor } from 'types';
+import { WhatsappIcon } from 'components/icons/WhatsappIcon';
+import { MapPinIcon } from 'components/icons/MapPinIcon';
+import { PriceTagIcon } from 'components/icons/PriceTagIcon';
+import { SearchIcon } from 'components/icons/SearchIcon';
+import { RefreshIcon } from 'components/icons/RefreshIcon';
 
 interface VendorSearchProps {
     addVendor: (vendor: NewVendor) => void;

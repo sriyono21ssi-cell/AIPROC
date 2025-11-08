@@ -1,6 +1,6 @@
 
 import { useState, useCallback } from 'react';
-import type { Vendor, Evaluation, NewVendor } from '../types';
+import type { Vendor, Evaluation, NewVendor } from 'types';
 
 const initialVendors: Vendor[] = [
   {

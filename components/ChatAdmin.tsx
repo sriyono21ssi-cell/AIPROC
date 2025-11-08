@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from 'react';
-import type { Vendor, PricedItem, Message, NewVendor, NewPricedItem, ComparisonProject, ComparisonVendor } from '../types';
-import { getChatResponse } from '../services/geminiService';
-import { ClipboardIcon } from './icons/ClipboardIcon';
+import type { Vendor, PricedItem, Message, NewVendor, NewPricedItem, ComparisonProject, ComparisonVendor } from 'types';
+import { getChatResponse } from 'services/geminiService';
+import { ClipboardIcon } from 'components/icons/ClipboardIcon';
 
 interface ChatAdminProps {
   vendors: Vendor[];

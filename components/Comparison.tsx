@@ -1,8 +1,8 @@
 
 import React, { useState, useMemo } from 'react';
-import type { ComparisonProject, ComparisonVendor, Weights } from '../types';
-import { useComparisonProjects } from '../hooks/useComparisonProjects';
-import { ScaleIcon } from './icons/ScaleIcon';
+import type { ComparisonProject, ComparisonVendor, Weights } from 'types';
+import { useComparisonProjects } from 'hooks/useComparisonProjects';
+import { ScaleIcon } from 'components/icons/ScaleIcon';
 
 type ComparisonProps = ReturnType<typeof useComparisonProjects>;
 

@@ -1,6 +1,6 @@
 
 import { useState, useMemo, useCallback } from 'react';
-import type { PricedItem, NewPricedItem, Vendor } from '../types';
+import type { PricedItem, NewPricedItem, Vendor } from 'types';
 
 const initialItems: PricedItem[] = [
     {

@@ -1,18 +1,18 @@
 
 import React, { useState, useMemo, useEffect } from 'react';
-import Sidebar from './components/Sidebar';
-import Dashboard from './components/Dashboard';
-import VendorManagement from './components/VendorManagement';
-import VendorSearch from './components/VendorSearch';
-import ChatAdmin from './components/ChatAdmin';
-import Pricing from './components/Pricing';
-import Comparison from './components/Comparison';
-import { useVendors } from './hooks/useVendors';
-import { usePricing } from './hooks/usePricing';
-import { useChat } from './hooks/useChat';
-import { useVendorSearch } from './hooks/useVendorSearch';
-import { useComparisonProjects } from './hooks/useComparisonProjects';
-import type { View } from './types';
+import Sidebar from 'components/Sidebar';
+import Dashboard from 'components/Dashboard';
+import VendorManagement from 'components/VendorManagement';
+import VendorSearch from 'components/VendorSearch';
+import ChatAdmin from 'components/ChatAdmin';
+import Pricing from 'components/Pricing';
+import Comparison from 'components/Comparison';
+import { useVendors } from 'hooks/useVendors';
+import { usePricing } from 'hooks/usePricing';
+import { useChat } from 'hooks/useChat';
+import { useVendorSearch } from 'hooks/useVendorSearch';
+import { useComparisonProjects } from 'hooks/useComparisonProjects';
+import type { View } from 'types';
 
 
 const App: React.FC = () => {

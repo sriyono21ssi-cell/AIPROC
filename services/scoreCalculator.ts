@@ -1,4 +1,4 @@
-import type { Vendor } from '../types';
+import type { Vendor } from 'types';
 
 /**
  * Calculates a consolidated procurement score for a vendor.

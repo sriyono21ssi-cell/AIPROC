@@ -1,10 +1,10 @@
 
 import React, { useState, useMemo, useRef } from 'react';
-import type { PricedItem, NewPricedItem, Vendor } from '../types';
-import { TrendingUpIcon } from './icons/TrendingUpIcon';
-import { TrendingDownIcon } from './icons/TrendingDownIcon';
-import { MinusIcon } from './icons/MinusIcon';
-import PriceComparison from './PriceComparison';
+import type { PricedItem, NewPricedItem, Vendor } from 'types';
+import { TrendingUpIcon } from 'components/icons/TrendingUpIcon';
+import { TrendingDownIcon } from 'components/icons/TrendingDownIcon';
+import { MinusIcon } from 'components/icons/MinusIcon';
+import PriceComparison from 'components/PriceComparison';
 
 interface PricingProps {
   pricedItems: PricedItem[];

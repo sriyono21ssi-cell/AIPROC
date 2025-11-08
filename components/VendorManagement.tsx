@@ -1,11 +1,11 @@
 
 import React, { useState, useMemo, useRef } from 'react';
-import type { Vendor, Evaluation, NewVendor } from '../types';
-import { analyzeSingleVendor } from '../services/geminiService';
-import { TrendingUpIcon } from './icons/TrendingUpIcon';
-import { TrendingDownIcon } from './icons/TrendingDownIcon';
-import { MinusIcon } from './icons/MinusIcon';
-import VendorComparison from './VendorComparison';
+import type { Vendor, Evaluation, NewVendor } from 'types';
+import { analyzeSingleVendor } from 'services/geminiService';
+import { TrendingUpIcon } from 'components/icons/TrendingUpIcon';
+import { TrendingDownIcon } from 'components/icons/TrendingDownIcon';
+import { MinusIcon } from 'components/icons/MinusIcon';
+import VendorComparison from 'components/VendorComparison';
 
 interface VendorManagementProps {
   vendors: Vendor[];
