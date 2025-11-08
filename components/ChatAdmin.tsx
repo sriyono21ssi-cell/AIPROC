@@ -1,8 +1,6 @@
-
 import React, { useState, useRef, useEffect } from 'react';
 import type { Vendor, PricedItem, Message, NewVendor, NewPricedItem, ComparisonProject, ComparisonVendor } from '../types';
-import { createChatSession } from '../services/geminiService';
-import type { Chat } from '@google/genai';
+import { getChatResponse } from '../services/geminiService';
 import { ClipboardIcon } from './icons/ClipboardIcon';
 
 interface ChatAdminProps {
@@ -25,14 +23,7 @@ const ChatAdmin: React.FC<ChatAdminProps> = (props) => {
   const [input, setInput] = useState('');
   const [isLoading, setIsLoading] = useState(false);
   const [isCopied, setIsCopied] = useState(false);
-  const chatSession = useRef<Chat | null>(null);
   const chatContainerRef = useRef<HTMLDivElement>(null);
-
-  useEffect(() => {
-    if (!chatSession.current) {
-      chatSession.current = createChatSession();
-    }
-  }, []);
   
   useEffect(() => {
     if(chatContainerRef.current) {
@@ -43,7 +34,6 @@ const ChatAdmin: React.FC<ChatAdminProps> = (props) => {
   const handleReset = () => {
     if (window.confirm("Yakin ingin mereset percakapan ini?")) {
         resetChat();
-        chatSession.current = createChatSession();
     }
   }
 
@@ -119,21 +109,19 @@ const ChatAdmin: React.FC<ChatAdminProps> = (props) => {
   };
 
   const handleSend = async () => {
-    if (!input.trim() || !chatSession.current) return;
+    if (!input.trim()) return;
     const userInput = input;
+    const currentHistory = [...messages];
+    
     setInput('');
     addMessage({ sender: 'user', text: userInput });
     setIsLoading(true);
 
     try {
-      const vendorContext = `Data Vendor Saat Ini:\n${JSON.stringify(vendors.map(v => ({id: v.id, name: v.name, category: v.category, status: v.status})))}`;
-      const pricingContext = `Data Harga Barang Saat Ini:\n${JSON.stringify(pricedItems.map(p => ({id: p.id, name: p.name, lastPrice: p.lastPrice, lastVendorName: p.lastVendorName, history: p.history})))}`;
-      const projectContext = `Data Proyek Perbandingan Saat Ini:\n${JSON.stringify(projects.map(p => ({id: p.id, name: p.name, description: p.description})))}`;
+      const contextData = { vendors, pricedItems, projects };
+      const aiResponseText = await getChatResponse(currentHistory, userInput, contextData);
       
-      const fullPrompt = `Berikut adalah data yang relevan untuk membantumu menjawab pertanyaan:\n\n${vendorContext}\n\n${pricingContext}\n\n${projectContext}\n\n---\n\nPertanyaan User: ${userInput}`;
-      
-      const response = await chatSession.current.sendMessage({ message: fullPrompt });
-      const aiResponse = response.text.trim();
+      const aiResponse = aiResponseText.trim();
       
       // Check if response is a JSON action
       if (aiResponse.startsWith('{') && aiResponse.endsWith('}')) {
