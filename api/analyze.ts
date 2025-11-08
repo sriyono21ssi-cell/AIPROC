@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import type { Vendor, PricedItem, Tender, Bid, BidDetail } from '../src/types';
+import type { Vendor, PricedItem, Tender, Bid, BidDetail } from '../types';
 
 // This is a Vercel serverless function, so process.env is secure.
 const API_KEY = process.env.GEMINI_API_KEY;

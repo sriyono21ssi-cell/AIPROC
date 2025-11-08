@@ -1,5 +1,5 @@
 import { GoogleGenAI } from "@google/genai";
-import type { Vendor, PricedItem, ComparisonProject, Message } from '../src/types';
+import type { Vendor, PricedItem, ComparisonProject, Message } from '../types';
 
 const API_KEY = process.env.GEMINI_API_KEY;
 
